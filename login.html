@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head class="head">
+  <title>Login page</title>
+  <h1 class="heading">Welcome to our login page!</h1>
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<div class="mydiv">
+
+  <body class="myBody">
+    <br>
+    <form id="login-form" onsubmit="" class="formClass">
+      <input type="text" name="username" id="username-field" class="username" placeholder="Username">
+      <br>
+      <input type="password" name="password" id="password-field" class="username" placeholder="Password">
+      <br>
+      <h1 id="left" class="left"></h1>
+      <h2 class="left" id="redirect"></h2>
+      <p class="change"><a class="change" id="changeUD" href="changeUD.html"> Change username or password? </a></p>
+      </p>
+      <input type="submit" value="Login" id="login-form-submit" class="btn">
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+
+  </script>
+  <script>
+    $(document).ready(function () {
+  
+    })
+    $("#login-form-submit").click(function () {
+      $("#login-form-submit").css("background-color", "blue")
+  
+    })
+  /*$("#username-field").focus(function(){
+    $("#username-field").css("border-color", "red")
+
+  })*/
+  </script>
+  <script src="login.js">  </script>
+</body>
+
+</html>

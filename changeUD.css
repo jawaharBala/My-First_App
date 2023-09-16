@@ -1,0 +1,43 @@
+.heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: inherit;
+    text-align: center;
+    color: slateblue;
+}
+.option{
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: blue;
+}
+
+.buttonclass{
+    text-align: center;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.formclass{
+    text-align: center;
+}
+.username{
+    color: darkblue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.password{
+    color: darkblue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.username:hover{
+    color: darkorange;
+}
+.password:hover{
+    color: darkorange;
+}

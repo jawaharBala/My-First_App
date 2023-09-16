@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Ticketer</title>
+
+<link rel="stylesheet" href="ticket.css">
+
+<head class="head">
+    <h1 class="head1">Welcome to IncidentDB!</h1>
+    <h2 class="head2">You can register your tickets here.</h2>
+</head>
+<br>
+
+<body>
+    <form id="form">
+        <div class="div1">
+
+            <label class="label1" for="appID">Enter the ApplicationID:</label>
+            <input class="line1" type="text" placeholder="Application ID" id="appID" required name="appID">
+            <br>
+            <label class="label1" for="startdate">Ticket start date:</label>
+            <input type="date" id="startdate" name="startdate">
+            <br>
+            <label class="label1" for="TicketID">Enter your TicketID:</label>
+            <input type="text" placeholder="TicketID" id="TicketID" name="TicketID" class="">
+            <br>
+            <label class="label1" for="resYN">Is Ticket resolved:</label>
+            <input type="radio" id="resYN" name="resYN" value="1">
+            <label for="resY">Yes</label>
+            <input type="radio" id="resYN" name="resYN" value="0">
+            <label for="resN">No</label>
+            <br>
+            <label class="label1" for="enddate">Ticket end date:</label>
+            <input type="date" id="enddate" name="enddate" disabled>
+            <br>
+            <input type="submit" id="submit" class="submit" value="submit" placeholder="Submit">
+
+        </div>
+    </form>
+</body>
+<script src="ticket.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('#form input').on('change', function () {
+            let x = $('input[name=resYN]:checked', '#form').val()
+            if (x == 1) {
+                $("#enddate").prop("disabled", false)
+            } else {
+                $("#enddate").prop("disabled", true)
+            }
+        })
+
+    })
+</script>
+
+</html>
